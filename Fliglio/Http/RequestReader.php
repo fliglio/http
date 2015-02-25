@@ -12,7 +12,6 @@ interface RequestReader {
 	public function getGetParams();
 	public function getPostData();
 	
-	public function addHeader($key, $val);
 	public function getHeaders();
 	public function isHeaderSet($key);
 	public function getHeader($key);
