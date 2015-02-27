@@ -126,7 +126,7 @@ class Http {
 		self::STATUS_NOT_EXTENDED => 'Not Extended',
 	);
 	
-	public static function getMessage($code) {
+	public static function getStatusMessage($code) {
 		if (!in_array($code, array_keys(self::$messages))) {
 			throw new \UnexpectedValueException(sprintf('"$s" not a valid http code', $code));
 		}
