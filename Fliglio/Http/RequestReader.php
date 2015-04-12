@@ -10,7 +10,7 @@ interface RequestReader {
 	public function getUrl();
 
 	public function getGetParams();
-	public function getPostData();
+	public function getBody();
 	
 	public function getHeaders();
 	public function isHeaderSet($key);
