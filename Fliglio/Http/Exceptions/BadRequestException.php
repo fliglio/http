@@ -1,5 +1,5 @@
 <?php
 namespace Fliglio\Http\Exceptions;
 
-class BadRequestErrorException extends HttpStatusException {
+class BadRequestException extends HttpStatusException {
 }
