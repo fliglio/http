@@ -8,4 +8,5 @@ interface RequestWriter {
 	public function getUrl();
 	public function getHeaders();
 	public function getBody();
+	public function write();
 }
