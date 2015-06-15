@@ -16,5 +16,7 @@ interface ResponseWriter {
 
 	public function setContentType($type);
 	public function getContentType();
+	
+	public function write();
 }
 

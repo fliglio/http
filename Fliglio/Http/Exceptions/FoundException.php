@@ -4,9 +4,9 @@ namespace Fliglio\Http\Exceptions;
 
 use Fliglio\Http\Http;
 
-class MovedPermanentlyException extends HttpStatusException {
+class FoundException extends HttpStatusException {
 
-	protected static $status = Http::STATUS_MOVED_PERMANENTLY;
+	protected static $status = Http::STATUS_FOUND;
 
 	private $location;
 	public function __construct($location) {
@@ -16,3 +16,4 @@ class MovedPermanentlyException extends HttpStatusException {
 		return $this->location;
 	}
 }
+
