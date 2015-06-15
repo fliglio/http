@@ -7,6 +7,7 @@ use Fliglio\Http\Http;
 class BodyTest extends \PHPUnit_Framework_TestCase {
 
 	private $exceptionMap = [
+		Http::STATUS_FOUND => 'Fliglio\Http\Exceptions\FoundException',
 		Http::STATUS_MOVED_PERMANENTLY => 'Fliglio\Http\Exceptions\MovedPermanentlyException',
 		Http::STATUS_SEE_OTHER => 'Fliglio\Http\Exceptions\SeeOtherException',
 		Http::STATUS_BAD_REQUEST => 'Fliglio\Http\Exceptions\BadRequestException',
