@@ -55,6 +55,7 @@ class Http {
 	const STATUS_FAILED_DEPENDENCY = 424;
 	const STATUS_UNORDERED_COLLECTION = 425;
 	const STATUS_UPGRADE_REQUIRED = 426;
+	const STATUS_TOO_MANY_REQUESTS = 429;
 	const STATUS_RETRY_WITH = 449;
 	const STATUS_BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = 450;
 	const STATUS_INTERNAL_SERVER_ERROR = 500;
@@ -112,6 +113,7 @@ class Http {
 		self::STATUS_FAILED_DEPENDENCY => 'Failed Dependency',
 		self::STATUS_UNORDERED_COLLECTION => 'Unordered Collection',
 		self::STATUS_UPGRADE_REQUIRED => 'Upgrade Required',
+		self::STATUS_TOO_MANY_REQUESTS => 'Too Many Requests',
 		self::STATUS_RETRY_WITH => 'Retry With',
 		self::STATUS_BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS => 'Blocked by Windows Parental Controls',
 		self::STATUS_INTERNAL_SERVER_ERROR => 'Internal Server Error',
