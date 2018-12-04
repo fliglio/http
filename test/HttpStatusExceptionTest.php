@@ -25,6 +25,7 @@ class BodyTest extends \PHPUnit_Framework_TestCase {
 		Http::STATUS_BAD_GATEWAY => 'Fliglio\Http\Exceptions\BadGatewayException',
 		Http::STATUS_SERVICE_UNAVAILABLE => 'Fliglio\Http\Exceptions\ServiceUnavailableException',
 		Http::STATUS_GATEWAY_TIMEOUT => 'Fliglio\Http\Exceptions\GatewayTimeoutException',
+		Http::STATUS_TOO_MANY_REQUESTS => 'Fliglio\Http\Exceptions\TooManyRequestsException',
 	];
 
 	public function testStatusCodes() {
