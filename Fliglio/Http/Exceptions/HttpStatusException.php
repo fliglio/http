@@ -7,6 +7,8 @@ class HttpStatusException extends \Exception {
 	protected static $status;
 
 	private $errorInfo;
+	
+	private $data;
 
 	public function getStatusCode() {
 		return static::$status;
@@ -19,4 +21,12 @@ class HttpStatusException extends \Exception {
 		return $this;
 	}
 
+	public function getData() {
+		return $this->data;
+	}
+
+	public function setData($data) {
+		$this->data = $data;
+		return $this;
+	}
 }
