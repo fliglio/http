@@ -41,9 +41,9 @@ class BodyTest extends \PHPUnit_Framework_TestCase {
 		try {
 			
 			// when
-			throw (new \Fliglio\Http\Exceptions\ConflictException)
+			throw (new ConflictException)
 				->setData($data = ['foo' => 'bar']);
-		} catch (Fliglio\Http\Exceptions\ConflictException $e) {
+		} catch (\ConflictException $e) {
 			
 			//then
 			$this->assertEquals($data, $e->getData());
@@ -55,9 +55,9 @@ class BodyTest extends \PHPUnit_Framework_TestCase {
 		try {
 
 			// when
-			throw (new \Fliglio\Http\Exceptions\ConflictException)
+			throw (new ConflictException)
 				->setErrorInfo($error = 'You got an error!');
-		} catch (Fliglio\Http\Exceptions\ConflictException $e) {
+		} catch (ConflictException $e) {
 
 			//then
 			$this->assertEquals($error, $e->getErrorInfo());
