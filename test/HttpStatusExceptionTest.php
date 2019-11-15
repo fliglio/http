@@ -35,21 +35,22 @@ class BodyTest extends \PHPUnit_Framework_TestCase {
 			$this->assertEquals($status, $obj->getStatusCode());
 		}
 	}
-	
+
 	public function testDataPayload() {
 		// given
 		try {
-			
+
 			// when
 			throw (new ConflictException)
 				->setData($data = ['foo' => 'bar']);
-		} catch (\ConflictException $e) {
-			
+
+		} catch (ConflictException $e) {
+
 			//then
 			$this->assertEquals($data, $e->getData());
 		}
 	}
-	
+
 	public function testErrorPayload() {
 		// given
 		try {
@@ -62,7 +63,7 @@ class BodyTest extends \PHPUnit_Framework_TestCase {
 			//then
 			$this->assertEquals($error, $e->getErrorInfo());
 		}
-		
+
 	}
 
 }
