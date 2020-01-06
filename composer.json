@@ -9,12 +9,19 @@
         }
     ],
     "require": {
-        "php": ">=5.4"
+        "php": ">=5.6"
     },
     "require-dev": {
-        "phpunit/phpunit": "4.5.*"
+        "phpunit/phpunit": "5.6.*"
     },
-    "autoload": {
-        "psr-0": { "Fliglio\\Http\\": "" }
+	"autoload": {
+        "psr-4": { 
+            "Fliglio\\Http\\": "src/" 
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { 
+            "Fliglio\\Http\\": "test/" 
+        }
     }
 }
