@@ -3,7 +3,7 @@
 namespace Fliglio\Http;
 
 interface RequestReader {
-	
+
 	public function getHttpMethod();
 	public function getProtocol();
 	public function getHost();
@@ -11,7 +11,8 @@ interface RequestReader {
 
 	public function getGetParams();
 	public function getBody();
-	
+	public function getFiles();
+
 	public function getHeaders();
 	public function isHeaderSet($key);
 	public function getHeader($key);
